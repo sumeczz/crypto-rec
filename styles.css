@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+#crypto-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.crypto-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.crypto-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.crypto-card p {
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.change-positive {
+    color: #27ae60;
+}
+
+.change-negative {
+    color: #c0392b;
+}
+
+#last-updated {
+    text-align: center;
+    margin: 20px 0;
+    color: #7f8c8d;
+}
+
+#refresh-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#refresh-btn:hover {
+    background: #2980b9;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .crypto-card {
+        padding: 15px;
+    }
+}
